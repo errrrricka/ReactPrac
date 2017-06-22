@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+// importing react library here. go find the lbrary called react and assign it to the variable react
 
-import App from './components/app';
-import reducers from './reducers';
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+// Create a new component that produces HTML
 
-ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
-  </Provider>
-  , document.querySelector('.container'));
+// const App = function () {
+//   return <div>Herro!</div>;
+// }
+
+// Using a fat arrow instead. It helps to have more compact syntaxin React.
+const App = () => {
+  return <div>Herro!</div>;
+}
+
+// Take the component's generated HTML and put it on the page (in the DOM)
+
+ReactDOM.render(<App/>, document.querySelector('.container'));
+// Line above doesn't work alone because I'm not importing React library. Nothing in HTML either.
