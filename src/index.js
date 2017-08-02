@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import SearchBar from './components/searchBar';
 
-const API_Key = 'AIzaSyACCtbLbcZKi3jP_F4stQr0A_lE1UkDn_Q';
+// const API_Key = 'AIzaSyACCtbLbcZKi3jP_F4stQr0A_lE1UkDn_Q';
 // importing react library here. go find the lbrary called react and assign it to the variable react
 
 

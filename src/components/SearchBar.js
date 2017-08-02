@@ -13,11 +13,27 @@ import React, {Component} from 'react';
 
 
 class SearchBar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { term: 'Search here'};
+  }
+
   render () {
     return (
-    <input />
+      <div>
+        <input
+        value={this.state.term}
+        onChange={event => this.setState({term: event.target.value })} />
+      </div>
     );
   }
 }
+// define fnc on class that runs when event occurs. event handler.
+// same gen syntax as render method above
+// then pass it to the element we want to watch for the event
+// event object describes event that occured, specific & techy.
+
+// value of controlled components only changes when the state is updated
 
 export default SearchBar;
