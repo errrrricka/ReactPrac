@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import SearchBar from './components/searchBar';
 
 // const API_Key = 'AIzaSyACCtbLbcZKi3jP_F4stQr0A_lE1UkDn_Q';
+const API_Key = "AIzaSyBEtcvYg-uO6RwCl2d26cQ35mZFINcYy4I" ;
+
 // importing react library here. go find the lbrary called react and assign it to the variable react
 
 
@@ -13,7 +15,7 @@ import SearchBar from './components/searchBar';
 //   return <div>Herro!</div>;
 // }
 
-// Using a fat arrow instead. It helps to have more compact syntaxin React.
+// Using a fat arrow instead. It helps to have more compact syntax in React.
 const App = () => {
   return (
     <div>
